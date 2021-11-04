@@ -3,6 +3,7 @@ import { View, Text, Image, TextInput, TouchableOpacity, ImageBackground } from 
 import { Ionicons, FontAwesome, AntDesign } from "@expo/vector-icons";
 
 export default function Home(params) {
+    const navigation = params.navigation;
   return (
     <View
       style={{
@@ -20,7 +21,12 @@ export default function Home(params) {
           alignItems: "center",
         }}
       >
-        <Ionicons name="ios-menu-outline" size={1} color="white" />
+          <TouchableOpacity onPress={() => {
+          navigation.navigate("Login");
+        }} >
+        <FontAwesome name="arrow-circle-left" size={20}/>
+        </TouchableOpacity>
+
         <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
           <AntDesign name="search1" size={20} color="black" />
         </View>
