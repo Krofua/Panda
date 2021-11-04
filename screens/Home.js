@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Image, TextInput, TouchableOpacity, ImageBackground } from "react-native";
+import { View, Text, ScrollView, Image, TextInput, TouchableOpacity, ImageBackground } from "react-native";
 import { Ionicons, FontAwesome, AntDesign } from "@expo/vector-icons";
 
 export default function Home(params) {
@@ -13,6 +13,7 @@ export default function Home(params) {
         paddingHorizontal: 20,
       }}
     >
+        <ScrollView> 
       <Text style={{ fontSize: 20, marginBottom: 5, color: "black", fontFamily:"Trebuchet MS" }}>Home</Text>
       <View
         style={{
@@ -199,8 +200,8 @@ export default function Home(params) {
 
             </View>
         </View>
-
-       
+            </ScrollView>
+    
     </View>
   );
 }
