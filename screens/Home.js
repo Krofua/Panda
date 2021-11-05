@@ -7,27 +7,29 @@ export default function Home(params) {
   return (
     <View
       style={{
+        margin: 0,
+        padding: 0,
         backgroundColor: "WhiteSmoke",
         flex: 1,
-        paddingTop: 55,
-        paddingHorizontal: 20,
       }}
     >
         <ScrollView> 
-      <Text style={{ fontSize: 20, marginBottom: 5, color: "black", fontFamily:"Trebuchet MS" }}>Home</Text>
-      <View
+            <View
         style={{
           flexDirection: "row",
           justifyContent: "space-between",
           alignItems: "center",
+          backgroundColor: "orange",
+          padding: 10,
+          paddingTop: 50,
         }}
       >
           <TouchableOpacity onPress={() => {
           navigation.navigate("Login");
         }} >
-        <FontAwesome name="arrow-circle-left" size={20}/>
+        <FontAwesome name="arrow-circle-left" size={35}/>
         </TouchableOpacity>
-
+        <Text style={{ fontSize: 20, marginBottom: 5, color: "black", fontFamily:"Trebuchet MS", textAlign: "center", backgroundColor: "orange" }}>Home</Text>
         <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
           <AntDesign name="search1" size={20} color="black" />
         </View>
@@ -36,7 +38,7 @@ export default function Home(params) {
           flexDirection: "row",
           justifyContent: "space-around"
       }}
-      >
+      >     
             <View
                 style={{
                     backgroundColor: "white",
@@ -59,8 +61,21 @@ export default function Home(params) {
                     }}
                 />
                 <Text style={{ fontSize: 15, color: "black", fontFamily:"Trebuchet MS" }}>Samsung Galaxy Edge s22</Text>
-                <Text style={{ paddingBottom:30,fontSize: 15, color: "black", fontFamily:"Trebuchet MS" }}>Price: GHS 5,482.00 </Text>
-
+                <Text style={{ paddingBottom:10,fontSize: 15, color: "black", fontFamily:"Trebuchet MS" }}>Price: GHS 5,482.00 </Text>
+                <TouchableOpacity
+        onPress={() => {
+          navigation.navigate("info");
+        }}
+        style={{
+            marginBottom: 8,
+          padding: 10,
+          borderRadius: 10,
+          flexDirection: "row",
+          backgroundColor: "orange",
+        }}
+      >
+        <Text style={{color: "white" }}>Add to cart</Text>
+      </TouchableOpacity>
             </View>
             <View
                 style={{
@@ -84,8 +99,21 @@ export default function Home(params) {
                     }}
                 />
                 <Text style={{ fontSize: 15, color: "black", fontFamily:"Trebuchet MS" }}>Samsung Galaxy Ultra s21</Text>
-                <Text style={{ paddingBottom:30, fontSize: 15, color: "black", fontFamily:"Trebuchet MS" }}>Price: GHS 6,693.00 </Text>
-
+                <Text style={{ paddingBottom:10, fontSize: 15, color: "black", fontFamily:"Trebuchet MS" }}>Price: GHS 6,693.00 </Text>
+                <TouchableOpacity
+        onPress={() => {
+          navigation.navigate("info");
+        }}
+        style={{
+            marginBottom: 8,
+          padding: 10,
+          borderRadius: 10,
+          flexDirection: "row",
+          backgroundColor: "orange",
+        }}
+      >
+        <Text style={{color: "white" }}>Add to cart</Text>
+      </TouchableOpacity>
             </View>
         </View>
         <View style={{
@@ -115,8 +143,21 @@ export default function Home(params) {
                     }}
                 />
                 <Text style={{ fontSize: 15, color: "black", fontFamily:"Trebuchet MS" }}>Samsung Galaxy Ultra s20</Text>
-                <Text style={{ paddingBottom:30, fontSize: 15, color: "black", fontFamily:"Trebuchet MS" }}>Price: GHS 7,270.00 </Text>
-
+                <Text style={{ paddingBottom:10, fontSize: 15, color: "black", fontFamily:"Trebuchet MS" }}>Price: GHS 7,270.00 </Text>
+                <TouchableOpacity
+        onPress={() => {
+          navigation.navigate("info");
+        }}
+        style={{
+            marginBottom: 8,
+          padding: 10,
+          borderRadius: 10,
+          flexDirection: "row",
+          backgroundColor: "orange",
+        }}
+      >
+        <Text style={{color: "white" }}>Add to cart</Text>
+      </TouchableOpacity>
             </View>
             <View
                 style={{
@@ -140,8 +181,21 @@ export default function Home(params) {
                     }}
                 />
                 <Text style={{ fontSize: 15, color: "black", fontFamily:"Trebuchet MS" }}>Samsung Galaxy S6 Edge</Text>
-                <Text style={{ paddingBottom:30, fontSize: 15, color: "black", fontFamily:"Trebuchet MS" }}>Price: GHS 2,750.00 </Text>
-
+                <Text style={{ paddingBottom:10, fontSize: 15, color: "black", fontFamily:"Trebuchet MS" }}>Price: GHS 2,750.00 </Text>
+                <TouchableOpacity
+        onPress={() => {
+          navigation.navigate("info");
+        }}
+        style={{
+            marginBottom: 8,
+          padding: 10,
+          borderRadius: 10,
+          flexDirection: "row",
+          backgroundColor: "orange",
+        }}
+      >
+        <Text style={{color: "white" }}>Add to cart</Text>
+      </TouchableOpacity>
             </View>
         </View>
         <View style={{
@@ -171,8 +225,21 @@ export default function Home(params) {
                     }}
                 />
                 <Text style={{ fontSize: 15, color: "black", fontFamily:"Trebuchet MS" }}>iPhone X 256GB</Text>
-                <Text style={{ paddingBottom:30, fontSize: 15, color: "black", fontFamily:"Trebuchet MS" }}>Price: GHS 2,809.00 </Text>
-
+                <Text style={{ paddingBottom:10, fontSize: 15, color: "black", fontFamily:"Trebuchet MS" }}>Price: GHS 2,809.00 </Text>
+                <TouchableOpacity
+        onPress={() => {
+          navigation.navigate("info");
+        }}
+        style={{
+            marginBottom: 8,
+          padding: 10,
+          borderRadius: 10,
+          flexDirection: "row",
+          backgroundColor: "orange",
+        }}
+      >
+        <Text style={{color: "white" }}>Add to cart</Text>
+      </TouchableOpacity>
             </View>
             <View
                 style={{
@@ -196,8 +263,21 @@ export default function Home(params) {
                     }}
                 />
                 <Text style={{ fontSize: 15, color: "black", fontFamily:"Trebuchet MS" }}>iPhone Xs Max 64GB</Text>
-                <Text style={{ paddingBottom:30, fontSize: 15, color: "black", fontFamily:"Trebuchet MS" }}>Price: GHS 3,723.63 </Text>
-
+                <Text style={{ paddingBottom:10, fontSize: 15, color: "black", fontFamily:"Trebuchet MS" }}>Price: GHS 3,723.63 </Text>
+                <TouchableOpacity
+        onPress={() => {
+          navigation.navigate("info");
+        }}
+        style={{
+            marginBottom: 8,
+          padding: 10,
+          borderRadius: 10,
+          flexDirection: "row",
+          backgroundColor: "orange",
+        }}
+      >
+        <Text style={{color: "white" }}>Add to cart</Text>
+      </TouchableOpacity>
             </View>
         </View>
             </ScrollView>
