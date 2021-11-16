@@ -11,16 +11,9 @@ import {
   Button,
 } from 'react-native';
 import { Ionicons, FontAwesome, AntDesign } from "@expo/vector-icons";
-export default class ProductDetail extends Component {
-    navigation = Component.navigation
-  constructor(props) {
-    super(props);
-  }
 
-  clickEventListener() {
-    Alert.alert("Success", "Product has beed added to cart")
-  }
-  render() {
+export default function info(params){
+  const navigation = params.navigation;
     return (
       <View style={styles.container}>
         <ScrollView>
@@ -46,20 +39,6 @@ export default class ProductDetail extends Component {
             <Image style={styles.star} source={{uri:"https://img.icons8.com/color/40/000000/star.png"}}/>
             <Image style={styles.star} source={{uri:"https://img.icons8.com/color/40/000000/star.png"}}/>
             <Image style={styles.star} source={{uri:"https://img.icons8.com/color/40/000000/star.png"}}/>
-          </View>
-          <View style={styles.contentColors}>
-            <TouchableOpacity style={[styles.btnColor, {backgroundColor:"#00BFFF"}]}></TouchableOpacity> 
-            <TouchableOpacity style={[styles.btnColor, {backgroundColor:"#FF1493"}]}></TouchableOpacity> 
-            <TouchableOpacity style={[styles.btnColor, {backgroundColor:"#00CED1"}]}></TouchableOpacity> 
-            <TouchableOpacity style={[styles.btnColor, {backgroundColor:"#228B22"}]}></TouchableOpacity> 
-            <TouchableOpacity style={[styles.btnColor, {backgroundColor:"#20B2AA"}]}></TouchableOpacity> 
-            <TouchableOpacity style={[styles.btnColor, {backgroundColor:"#FF4500"}]}></TouchableOpacity> 
-          </View>
-          <View style={styles.contentSize}>
-            <TouchableOpacity style={styles.btnSize}><Text>S</Text></TouchableOpacity> 
-            <TouchableOpacity style={styles.btnSize}><Text>M</Text></TouchableOpacity> 
-            <TouchableOpacity style={styles.btnSize}><Text>L</Text></TouchableOpacity> 
-            <TouchableOpacity style={styles.btnSize}><Text>XL</Text></TouchableOpacity> 
           </View>
           <View style={styles.separator}></View>
           <View style={styles.addToCarContainer}>
